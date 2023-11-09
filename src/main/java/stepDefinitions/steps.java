@@ -15,9 +15,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
+import org.testng.reporters.EmailableReporter;
 import pageObjects.Homepage;
 import pageObjects.LoginPage;
+import java.util.HashMap;
+import java.util.List;
 import java.util.ResourceBundle;
+import utilities.DataReader;
 
 public class steps {
 
@@ -27,6 +31,9 @@ public class steps {
     LoginPage Login;
     Homepage Home;
     WebDriver driver;
+    List<HashMap<String, String>> datamap; //Data driven
+
+
 
     @Before
     public void setup() {
@@ -113,6 +120,18 @@ public class steps {
                 logger.info("Login Passed");
             }
         }
+
+    @When("The user enters a valid username and password with excel row {string}")
+    public void the_user_enters_a_valid_username_and_password_with_excel_row(String rows) {
+        datamap=DataReader.data(System.getProperty("user.dir")+"\\testData\\TestData.xlsx", "Sheet1");
+        int index=Integer.parseInt(rows)-1;
+        String Email = datamap.get(index).get("Email");
+        String Password = datamap.get(index).get("Password");
+        Login = new LoginPage(driver);
+        Login.EnterUsername(Email);
+        Login.EnterPassword(Password);
+
+    }
 
 
         }

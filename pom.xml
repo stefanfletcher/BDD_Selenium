@@ -13,7 +13,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
     <build>
         <pluginManagement>
             <plugins>
@@ -30,7 +30,6 @@
             </plugins>
         </pluginManagement>
     </build>
-
 
     <!-- Taken from https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/4.12.1 -->
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -62,8 +61,6 @@
             <version>5.10.1</version>
             <scope>test</scope>
         </dependency>
-
-
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
