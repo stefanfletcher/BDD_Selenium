@@ -8,6 +8,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions (
         features= {".//Features//"},
+        //features= {".//Features//"Login.feature},
+       // features= {".//Features//FailedLoginDDT.feature"},
         glue="stepDefinitions",
         plugin= {
                 "pretty",
@@ -16,7 +18,9 @@ import org.junit.runner.RunWith;
         },
        // dryRun=false,
         monochrome=true,
-        tags = "@Regression"	//Scenarios tagged with @sanity,
+         tags = "@Regression"	//Scenarios tagged with @sanity,
+      //  tags = "@Regression and Sanity"	//Scenarios tagged with @sanity,
+      //  tags = "@Regression or Sanity"
 )
 
 
