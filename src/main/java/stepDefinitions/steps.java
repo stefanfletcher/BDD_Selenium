@@ -1,8 +1,6 @@
 package stepDefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
+import io.cucumber.java.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,18 +8,29 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.reporters.EmailableReporter;
 import pageObjects.Homepage;
 import pageObjects.LoginPage;
+
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ResourceBundle;
 import utilities.DataReader;
+
 
 public class steps {
 
@@ -36,11 +45,25 @@ public class steps {
 
 
     @Before
-    public void setup() {
-        config = ResourceBundle.getBundle("config");// Load config.properties
-        logger = LogManager.getLogger(this.getClass());// for Logger
-        Browser = config.getString("Browser");
+    public void setup() throws MalformedURLException, URISyntaxException {
+
+        /* To enable Selenium Grid.
+        1.Go to C:\Selenium Drivers\Drivers
+        2.Run the Create Hub Bat file (java -jar selenium-server-4.15.0.jar hub)
+        3.Run the Create Node Bat file (java -jar selenium-server-4.15.0.jar node)
+        4.Run the Create Node Bat file (java -jar selenium-server-4.15.0.jar node --port 7777)
+        5.Access http://localhost:4444/ui#
+        6. Add the following code and run test runner.
+        ChromeOptions options = new ChromeOptions();
+        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+        This should be able to specify specific browsers/ operating systems etc however seems to only be working against Localhost / Chrome
+         */
+
+            config = ResourceBundle.getBundle("config"); // Load config.properties
+            logger = LogManager.getLogger(this.getClass()); // for Logger
+            Browser = config.getString("Browser");
     }
+
 
     @After
         public void tearDown(Scenario scenario) {
@@ -53,17 +76,16 @@ public class steps {
             driver.quit();
         }
 
-
         @Given("User Launches Browser")
-    public void user_launches_browser() {
+    public void user_launches_browser() throws MalformedURLException {
+           driver = new ChromeDriver();
         if (Browser.equals("Chrome")) {;
-            driver = new ChromeDriver();
         } else if (Browser.equals("Edge")) {
             driver = new EdgeDriver();
         } else {
             driver = new ChromeDriver();
         }
-    }
+        }
 
     @Given("opens URL {string}")
     public void opens_url(String url) throws InterruptedException {
@@ -134,4 +156,8 @@ public class steps {
     }
 
 
-        }
+
+
+
+
+}

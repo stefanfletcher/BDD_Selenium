@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
        // features= {".//Features//"},
         //features= {".//Features//"Login.feature},
        // features= {".//Features//FailedLoginDDT.feature"},
-         features= {".//Features//LoginDDTExcel.feature"},
+        // features= {".//Features//LoginDDTExcel.feature"},
+        features= {".//Features//SeleniumGrid.feature"},
         glue="stepDefinitions",
         plugin= {
                 "pretty",
