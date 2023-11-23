@@ -7,11 +7,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions (
-       // features= {".//Features//"},
+       features= {".//Features//"},
         //features= {".//Features//"Login.feature},
        // features= {".//Features//FailedLoginDDT.feature"},
         // features= {".//Features//LoginDDTExcel.feature"},
-        features= {".//Features//SeleniumGrid.feature"},
+       // features= {".//Features//SeleniumGrid.feature"},
         glue="stepDefinitions",
         plugin= {
                 "pretty",

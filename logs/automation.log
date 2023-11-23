@@ -376,3 +376,63 @@
 18:09:43.921 [main] INFO  stepDefinitions.steps - Opened Webpage
 18:09:46.091 [main] INFO  stepDefinitions.steps - Clicked Submit
 18:09:50.143 [main] INFO  stepDefinitions.steps - Verified we hit Dashboard
+23:23:36.249 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:23:38.347 [main] INFO  stepDefinitions.steps - Entered Username & Password
+23:23:38.378 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:23:40.438 [main] INFO  stepDefinitions.steps - Login Passed
+23:23:42.767 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:23:44.867 [main] INFO  stepDefinitions.steps - Entered Username & Password
+23:23:45.324 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:23:47.361 [main] INFO  stepDefinitions.steps - Login Passed
+23:23:49.758 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:23:51.848 [main] INFO  stepDefinitions.steps - Entered Username & Password
+23:23:51.877 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:23:53.921 [main] INFO  stepDefinitions.steps - Login Passed
+23:23:56.312 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:23:58.395 [main] INFO  stepDefinitions.steps - Entered Username & Password
+23:23:58.425 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:24:02.462 [main] INFO  stepDefinitions.steps - Verified we hit Dashboard
+23:24:04.968 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:24:07.059 [main] INFO  stepDefinitions.steps - Entered Username & Password
+23:24:07.092 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:24:11.125 [main] INFO  stepDefinitions.steps - Verified we hit Dashboard
+23:24:13.494 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:24:15.592 [main] INFO  stepDefinitions.steps - Entered Username & Password
+23:24:15.621 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:24:19.650 [main] INFO  stepDefinitions.steps - Verified we hit Dashboard
+23:24:23.901 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:24:26.481 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:24:30.521 [main] INFO  stepDefinitions.steps - Verified we hit Dashboard
+23:24:32.893 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:24:35.037 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:24:39.088 [main] INFO  stepDefinitions.steps - Verified we hit Dashboard
+23:34:31.606 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:34:33.696 [main] INFO  stepDefinitions.steps - Entered Username & Password
+23:34:33.729 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:34:35.785 [main] INFO  stepDefinitions.steps - Login Passed
+23:34:38.401 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:34:40.502 [main] INFO  stepDefinitions.steps - Entered Username & Password
+23:34:40.535 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:34:42.568 [main] INFO  stepDefinitions.steps - Login Passed
+23:34:45.205 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:34:47.302 [main] INFO  stepDefinitions.steps - Entered Username & Password
+23:34:47.344 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:34:49.382 [main] INFO  stepDefinitions.steps - Login Passed
+23:34:51.961 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:34:54.043 [main] INFO  stepDefinitions.steps - Entered Username & Password
+23:34:54.775 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:34:58.812 [main] INFO  stepDefinitions.steps - Verified we hit Dashboard
+23:35:01.910 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:35:03.996 [main] INFO  stepDefinitions.steps - Entered Username & Password
+23:35:04.026 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:35:08.055 [main] INFO  stepDefinitions.steps - Verified we hit Dashboard
+23:35:10.631 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:35:12.728 [main] INFO  stepDefinitions.steps - Entered Username & Password
+23:35:12.762 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:35:16.797 [main] INFO  stepDefinitions.steps - Verified we hit Dashboard
+23:35:19.335 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:35:21.814 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:35:25.858 [main] INFO  stepDefinitions.steps - Verified we hit Dashboard
+23:35:28.433 [main] INFO  stepDefinitions.steps - Opened Webpage
+23:35:30.576 [main] INFO  stepDefinitions.steps - Clicked Submit
+23:35:34.622 [main] INFO  stepDefinitions.steps - Verified we hit Dashboard

@@ -53,6 +53,7 @@ public class steps {
         3.Run the Create Node Bat file (java -jar selenium-server-4.15.0.jar node)
         4.Run the Create Node Bat file (java -jar selenium-server-4.15.0.jar node --port 7777)
         5.Access http://localhost:4444/ui#
+        https://qaautomation.expert/2022/07/29/selenium-4-grid-parallel-testing/
         6. Add the following code and run test runner.
         ChromeOptions options = new ChromeOptions();
         driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);

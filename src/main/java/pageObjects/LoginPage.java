@@ -22,7 +22,6 @@ public class LoginPage extends Base_Class {
         return driver.getPageSource();
     }
 
-
     public Boolean FailedLoginError() {
         Boolean Failedloginisdisplayed = driver.findElement(FailedLogin).isDisplayed();
         return Failedloginisdisplayed;
